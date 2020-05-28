@@ -11,4 +11,14 @@ function copyToClipboard() {
     var value = document.getElementById('result').innerHTML;
     addToClipboard(value)
     console.log("copied....")
+    showSuccess();
+}
+
+function showSuccess() {
+    var x = document.getElementById("alert");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
