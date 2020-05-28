@@ -16,6 +16,10 @@ function copyToClipboard() {
 
 function showSuccess() {
     var x = document.getElementById("alert");
+    if (!x) {
+        return;
+    }
+
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
