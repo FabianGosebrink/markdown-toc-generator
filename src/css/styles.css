@@ -43,3 +43,7 @@ body {
 .show {
   display: block;
 }
+
+.toc-result {
+  background-color: white;
+}
