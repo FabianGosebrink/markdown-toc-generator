@@ -24,6 +24,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet" />
@@ -70,7 +74,7 @@
           <pre id="result"></pre>
         </div>
       </div>
-      <p>
+      <p id="clipboard-button" class="hide">
         <button type="button" class="btn btn-info" onclick="copyToClipboard()">
           Copy to Clipboard
         </button>
@@ -79,12 +83,25 @@
 
     <footer class="footer">
       <div class="container">
-        <a
-          target="_blank"
-          class="text-muted"
-          href="https://twitter.com/FabianGosebrink"
-          >Made with ♥ by Fabian Gosebrink</a
-        >
+        <div class="d-flex justify-content-between">
+          <div>
+            <a
+              target="_blank"
+              class="text-muted"
+              href="https://twitter.com/FabianGosebrink"
+              >Made with ♥ by Fabian Gosebrink <i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-link color"
+              onclick="toggleDarkMode()"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <script
@@ -106,5 +123,6 @@
     <script src="js/filter-polyfill.js"></script>
     <script src="js/toc-generator.js"></script>
     <script src="js/clipboard.js"></script>
+    <script src="js/utils.js"></script>
   </body>
 </html>

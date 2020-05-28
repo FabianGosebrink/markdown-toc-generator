@@ -28,6 +28,18 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
+  background-color: #191919;
+  color: #e8e8e8;
+}
+
+.color {
+  color: #191919;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }

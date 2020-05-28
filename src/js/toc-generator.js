@@ -13,6 +13,12 @@
          return this.addSpacesPrefixToLine(spacesCount, line);
      });
 
+     if (!!allNewLinesWithSpaces.length) {
+         showButton();
+     } else {
+         hideButton();
+     }
+
      return allNewLinesWithSpaces.join('\r\n');
  }
 
@@ -51,4 +57,15 @@
 
  function removeHashes(line) {
      return line.split('#').join('').trim();
+ }
+
+ function showButton() {
+     document.getElementById('clipboard-button').classList.remove("hide");
+     document.getElementById('clipboard-button').classList.add("show");
+ }
+
+ function hideButton() {
+     document.getElementById('clipboard-button').classList.remove("show");
+     document.getElementById('clipboard-button').classList.add("hide");
+
  }
