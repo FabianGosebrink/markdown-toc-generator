@@ -5,8 +5,6 @@
   </a>
 </p>
 
-> With this project we are running an Angular project which is getting updated by an ASP.NET Core backend with SignalR. It receives data ove ra REST interface and gets datapushed with SignalR. Enjoy!
-
 ## Link
 
 [ToC Generator on Azure](https://salmon-pebble-03f4fd810.azurestaticapps.net/)
