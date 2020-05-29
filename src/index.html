@@ -33,7 +33,7 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body onload="getDate()">
     <!-- Begin page content -->
     <main role="main" class="container">
       <h1 class="mt-5">Markdown ToC Generator</h1>
@@ -89,7 +89,8 @@
               target="_blank"
               class="text-muted"
               href="https://twitter.com/FabianGosebrink"
-              >Made with ♥ by Fabian Gosebrink <i class="fab fa-twitter"></i
+              >Made in <span id="date"></span> with ♥ by Fabian Gosebrink
+              <i class="fab fa-twitter"></i
             ></a>
             <a
               target="_blank"
